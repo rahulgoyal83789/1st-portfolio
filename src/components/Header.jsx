@@ -126,7 +126,7 @@ const Header = () => {
           height: isopen? "auto" : 0 , 
         }}
         transition={{duration:0.5}}
-        className="md:hidden overflow-hidden bg:white dark:bg-gray-900 shadow-lg px-4 py-5 space-y-5">
+        className="md:hidden overflow-hidden bg-white dark:bg-gray-900 shadow-lg px-4 py-5 space-y-5">
           <nav className="flex flex-col space-y-3">
           {["Home", "About", "Projects", "Experience" , "Contact"].map((item, index) =>(
             <a onClick={toggleMenu} className="text-gray-300 font-medium py-2" key={item} href='#'>
@@ -197,7 +197,7 @@ const Header = () => {
                 type='submit'
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className='w-full px-4 py-2 bg-gradient-to-r from-violet-600 to-violet-400 hover:from-violet-700 hover:from-purple-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg hover:shadow-violet-600/50 '>Send Message</motion.button>
+                className='w-full px-4 py-2 bg-gradient-to-r from-violet-600 to-violet-400 hover:from-violet-700 hover:to-purple-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg hover:shadow-violet-600/50 '>Send Message</motion.button>
               </form>
             </motion.div>
           </motion.div>

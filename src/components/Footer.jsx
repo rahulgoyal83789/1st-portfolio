@@ -2,7 +2,7 @@ import { FiGithub , FiLinkedin , FiInstagram } from 'react-icons/fi';
 import { BsTwitterX } from "react-icons/bs";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-16 px-6 mt-40">
+    <footer className="bg-black text-white py-16 px-6">
         <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center">
                 {/* Logo and description */}
@@ -13,16 +13,16 @@ const Footer = () => {
                         Connect
                     </h3>
                     <div className="flex space-x-4">
-                        <a href="https://linkedin.com/in/rahulgoyal83789" className="text-gray-700 hover:text-violet-400 transition-colors">
+                        <a href="https://linkedin.com/in/rahulgoyal83789" className="text-gray-400 hover:text-violet-400 transition-colors">
                             <FiLinkedin className='w-5 h-5'/>
                         </a>
-                        <a href="https://github.com/rahulgoyal83789" className="text-gray-700 hover:text-violet-400 transition-colors">
+                        <a href="https://github.com/rahulgoyal83789" className="text-gray-400 hover:text-violet-400 transition-colors">
                             <FiGithub  className='w-5 h-5'/>
                         </a>
-                        <a href="https://instagram.com/rahulgoyal83789" className="text-gray-700 hover:text-violet-400 transition-colors">
+                        <a href="https://instagram.com/rahulgoyal83789" className="text-gray-400 hover:text-violet-400 transition-colors">
                             <FiInstagram className='w-5 h-5'/>
                         </a>
-                        <a href="https://x.com/rahulgoyal83789" className="text-gray-700 hover:text-violet-400 transition-colors">
+                        <a href="https://x.com/rahulgoyal83789" className="text-gray-400 hover:text-violet-400 transition-colors">
                             <BsTwitterX className='w-5 h-5'/>
                         </a>
                     </div>

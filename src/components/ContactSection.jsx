@@ -33,7 +33,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section className="relative bg-gradient-to-b from-black to-[#1a0533] min-h-screen flex items-center justify-center py-24 px-6 overflow-hidden">
+        <section className="relative bg-gradient-to-b from-black to-[#1a0533] flex items-center justify-center py-20 sm:py-24 px-4 sm:px-6 overflow-hidden">
 
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-violet-900/20 rounded-full blur-3xl" />

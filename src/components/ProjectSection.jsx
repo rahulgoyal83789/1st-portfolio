@@ -14,22 +14,26 @@ const ProjectSection = () => {
         {
             id: 1,
             title: "Nestique - Property Rental Platform",
-            imageSrc: "/images/Nestique_image.png"
+            imageSrc: "/images/Nestique_image.png",
+            link: "https://nestique.onrender.com/",
         },
         {
             id: 2,
             title: "BrainDrift - AI-Powered Interview Preparation Platform",
-            imageSrc: "/images/Braindrift_image.png"
+            imageSrc: "/images/Braindrift_image.png",
+            link: "https://braindrift.vercel.app/",
         },
         {
             id: 3,
             title: "MergeConflict - Live Code Collaboration Tool",
-            imageSrc: "/images/MergeConflict_image.png"
+            imageSrc: "/images/MergeConflict_image.png",
+            link: "https://github.com/rahulgoyal83789/mergeconflict",
         },
         {
             id: 4,
             title: "WeatherOs - React based basic weather app",
-            imageSrc: "/images/Weatherapp_image.png"
+            imageSrc: "/images/Weatherapp_image.png",
+            link: "https://github.com/rahulgoyal83789/weatheros",
         },
     ];
 
@@ -170,9 +174,14 @@ const ProjectSection = () => {
                                     alt={project.title}
                                     className="project-image max-w-full max-h-[65vh] rounded-2xl object-cover"
                                 />
-                                <h3 className="project-title flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300 cursor-pointer">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-title flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300"
+                                >
                                     {project.title} <SlShareAlt />
-                                </h3>
+                                </a>
                             </div>
                         </div>
                     ))}

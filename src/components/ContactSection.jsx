@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail , FiInstagram} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiInstagram, FiPhone } from "react-icons/fi";
 import { BsTwitterX } from "react-icons/bs";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqejzljq";
@@ -58,7 +58,7 @@ const ContactSection = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-4xl md:text-6xl font-bold text-white mb-4"
                     >
-                        Let's Build Something
+                        Let's Build Something Crazy
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -88,6 +88,7 @@ const ContactSection = () => {
                         </div>
 
                         {[
+                            { icon: <FiPhone className="w-5 h-5" />,    label: "Phone",    value: "+91 7827131954",                href: "tel:+917827131954" },
                             { icon: <FiMail className="w-5 h-5" />,     label: "Email",    value: "rahulgoyal83789@gmail.com",     href: "mailto:rahulgoyal83789@gmail.com" },
                             { icon: <FiLinkedin className="w-5 h-5" />, label: "LinkedIn", value: "linkedin.com/in/rahulgoyal83789", href: "https://linkedin.com/in/rahulgoyal83789" },
                             { icon: <FiGithub className="w-5 h-5" />,   label: "GitHub",   value: "github.com/rahulgoyal83789",    href: "https://github.com/rahulgoyal83789" },
